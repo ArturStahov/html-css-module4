@@ -21,6 +21,11 @@ body {
 header {
   padding-top: 35px;
 }
+
+h3 {
+  font-family: "Roboto", "Times New Roman", sans-serif;
+}
+
 .clearfix::after {
   display: table;
   content: "";
@@ -60,12 +65,13 @@ header {
 
 .nav-link a {
   font-size: 14px;
-  font-family: "Open Sans" "Times New Roman", sans-serif;
+  font-family: "Open Sans", "Times New Roman";
   font-weight: 700;
-  line-height: 11px;
+  line-height: 17px;
   text-transform: uppercase;
   text-decoration: none;
   color: #0f0101;
+  transition: 0.3s;
 }
 .nav-link a:focus,
 .nav-link a:hover {
@@ -73,6 +79,7 @@ header {
 }
 
 h2 {
+  margin-bottom: 90px;
   text-align: center;
   font-size: 48px;
   font-family: "Roboto", "Times New Roman", sans-serif;
@@ -81,6 +88,60 @@ h2 {
   text-transform: uppercase;
   color: #515151;
 }
+h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 160px;
+  border-bottom: 7px solid #1abc9c;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+
 .products {
+  padding-top: 100px;
+}
+
+.products-item {
+  background-color: #e9f0fd;
+  width: 255px;
+  float: left;
+}
+.products-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
+}
+.products-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+.products-name {
+  background-color: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
+
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+}
+.products-name h3 {
+  width: 170px;
+  padding: 8px 14px;
+  float: left;
+  font-size: 18px;
+}
+.products-name p {
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.44);
+  margin: 0px;
+  float: right;
+}
+.products-name p::before {
+  content: "\0024";
+}
+.products-item div:focus,
+.products-item div:hover {
+  background-color: #1abc9c;
+}
+
+.news {
   padding-top: 100px;
 }
