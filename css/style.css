@@ -91,10 +91,9 @@ h2 {
 h2::after {
   content: "";
   display: block;
-  height: 2px;
   width: 160px;
   border-bottom: 7px solid #1abc9c;
-  padding-top: 25px;
+  padding-top: 35px;
   margin: 0 auto;
 }
 
@@ -137,11 +136,63 @@ h2::after {
 .products-name p::before {
   content: "\0024";
 }
-.products-item div:focus,
-.products-item div:hover {
+.products-item:focus .products-name,
+.products-item:hover .products-name {
   background-color: #1abc9c;
 }
 
 .news {
   padding-top: 100px;
+}
+.news-post {
+  float: left;
+  width: 350px;
+}
+.news-post:not(:nth-child(3n)) {
+  margin-right: 30px;
+  margin-bottom: 80px;
+}
+.news-post h3 {
+  padding-top: 12px;
+  font-size: 18px;
+  font-family: "Open Sans", "Times New Roman", sans-serif;
+  color: #555252;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.news-post h3::after {
+  content: "";
+  display: block;
+  width: 135px;
+  border-bottom: 3px solid #1abc9c;
+  padding-top: 10px;
+}
+
+.news-post p {
+  padding-top: 28px;
+  font-size: 14px;
+  font-family: "Open Sans", "Times New Roman", sans-serif;
+  color: #555252;
+  line-height: 26px;
+  font-weight: 400;
+  transition: 0.3s;
+  letter-spacing: -0.6px;
+}
+
+.button-read-news {
+  padding-top: 12px;
+  text-align: left;
+}
+.button-read-news button {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #ffffff;
+  line-height: 26px;
+  background-color: #4ec6ab;
+  border-radius: 2px;
+
+  border-style: none;
+  padding: 15px 40px;
+  font-weight: 300;
 }
