@@ -22,10 +22,6 @@ header {
   padding-top: 35px;
 }
 
-h3 {
-  font-family: "Roboto", "Times New Roman", sans-serif;
-}
-
 .clearfix::after {
   display: table;
   content: "";
@@ -113,21 +109,23 @@ h2::after {
   margin-right: 30px;
 }
 .products-name {
+  font-family: "Roboto", "Times New Roman", sans-serif;
   background-color: rgb(50, 50, 50);
-  color: rgb(255, 255, 255);
-
   transition: 0.3s;
   text-transform: uppercase;
   letter-spacing: -0.6px;
   font-weight: 700;
 }
+
 .products-name h3 {
+  color: rgb(255, 255, 255);
   width: 170px;
   padding: 8px 14px;
   float: left;
   font-size: 18px;
 }
 .products-name p {
+  color: rgb(255, 255, 255);
   padding: 10px 12px;
   background-color: rgba(255, 255, 255, 0.44);
   margin: 0px;
@@ -186,12 +184,11 @@ h2::after {
 }
 .button-read-news button {
   font-size: 16px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Times New Roman", sans-serif;
   color: #ffffff;
   line-height: 26px;
   background-color: #4ec6ab;
   border-radius: 2px;
-
   border-style: none;
   padding: 15px 40px;
   font-weight: 300;
