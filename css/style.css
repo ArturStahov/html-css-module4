@@ -21,6 +21,9 @@ body {
 header {
   padding-top: 35px;
 }
+a {
+  text-decoration: none;
+}
 
 .clearfix::after {
   display: table;
@@ -46,10 +49,10 @@ header {
   font-weight: 900;
   color: #1abc9c;
 }
-
-.nav-list {
+.nav-container {
   float: right;
 }
+
 .nav-list li {
   float: left;
 }
@@ -63,7 +66,6 @@ header {
   font-weight: 700;
   line-height: 17px;
   text-transform: uppercase;
-  text-decoration: none;
   color: #0f0101;
   transition: 0.3s;
 }
@@ -115,7 +117,7 @@ h2::after {
   font-weight: 700;
 }
 
-.products-name h3 {
+.products-name a {
   color: rgb(255, 255, 255);
   width: 170px;
   padding: 8px 14px;
@@ -177,10 +179,10 @@ h2::after {
 }
 
 .button-read-news {
-  padding-top: 12px;
-  text-align: left;
-}
-.button-read-news button {
+  display: block;
+  width: 150px;
+  margin-top: 12px;
+  text-align: center;
   font-size: 16px;
   font-family: "Open Sans", "Times New Roman", sans-serif;
   color: #ffffff;
@@ -188,6 +190,6 @@ h2::after {
   background-color: #4ec6ab;
   border-radius: 2px;
   border-style: none;
-  padding: 15px 40px;
+  padding: 15px 0px 15px 0px;
   font-weight: 300;
 }
